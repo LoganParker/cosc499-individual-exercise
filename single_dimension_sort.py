@@ -9,5 +9,5 @@ def single_sort(array):
             if value < mini:
                 mini = value
         sortedArray.append(mini)
-        sortedArray.remove(mini)
+        array.remove(mini)
     return sortedArray

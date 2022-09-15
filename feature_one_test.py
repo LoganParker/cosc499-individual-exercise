@@ -11,8 +11,11 @@ class featureOneTest(unittest.TestCase):
             arraylength = random.randint(0, 999)
             while len(array) < arraylength:
                 array.append(random.randint(-1000, 1000))
-            programTested = single_dimension_sort.single_sort()
-            pySorted = array.sort()
+            print("Original: ", array)
+            pySorted = sorted(array)
+            programTested = single_dimension_sort.single_sort(array)
+            print("Self implementation: ", programTested)
+            print("Python Implementation: ", pySorted)
             self.assertEqual(pySorted, programTested)  # add assertion here
 
 
