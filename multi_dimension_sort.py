@@ -7,6 +7,7 @@ def multi_sort(array):
     totalArrayCount = len(array)
     newArray = [[] for i in range(totalArrayCount)]
     pointerX, pointerY = 0, 0
+    # find the minimum value from all the arrays, and move it into a new array
     while len(newArray[totalArrayCount-1]) < individualArrayLength:
         currentMin = sys.maxsize
         arrayIndexMin = -1
