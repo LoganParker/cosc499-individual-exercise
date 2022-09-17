@@ -17,6 +17,7 @@ class multi_sort_test(unittest.TestCase):
 
             random.shuffle(newArray)
             print(newArray)
+            # for each array, shuffle their individual values
             for array in newArray:
                 print(array)
                 random.shuffle(array)
